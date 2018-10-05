@@ -8,10 +8,17 @@ function setup(){
 	stroke(0);
 }
 
-function draw(){
-	if (mouseIsPressed) {
-		line(pmouseX, pmouseY, mouseX, mouseY);
-	}
+//function draw(){
+	//if (mouseIsPressed) {
+	//	line(pmouseX, pmouseY, mouseX, mouseY);
+	//}
+//}
+
+function touchMoved() {
+	line(pmouseX, pmouseY, mouseX, mouseY);
+  //ellipse(mouseX, mouseY, 5, 5);
+  // prevent default
+  return false;
 }
 
 function windowResized(){
