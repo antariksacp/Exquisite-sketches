@@ -15,7 +15,10 @@ function setup(){
 //}
 
 function touchMoved() {
-	line(pmouseX, pmouseY, mouseX, mouseY);
+	noStroke();
+	fill(random(mouseX), random(mouseY), 112);
+	rect(mouseX, mouseY, 20, 20);
+	//line(pmouseX, pmouseY, mouseX, mouseY);
   //ellipse(mouseX, mouseY, 5, 5);
   // prevent default
   return false;
